@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva - Restaurante</title>
+   <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+    
+    <!-- Playfair Display (para títulos elegantes) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Poppins (ótima para botões e destaques) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Open Sans (excelente para textos e leitura) -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+<body>
+    
+    <header>
+        <div class="contnav">
+            <h1>Sabor & Arte</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="reserva.html">Reservas</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+    <div class="reserva">
+        <h1>Reserva sua Mesa</h1>
+        <form action="#" method="post">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="temperos" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" readonly>
+
+            <label for="pessoas">Número de pessoas:</label>
+            <select name="pessoas" id="pessoas">
+                <option value="">Selecione</option>
+                <option value="1">1 pessoa</option>
+                <option value="2">2 pessoas</option>
+                <option value="3">3 pessoas</option>
+                <option value="4">4 pessoas</option>
+                <option value="5+">5 ou mais</option>
+            </select>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="hora">Horário:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="mensagem">Mensagem (opcional):</label>
+            <textarea name="mensagem" id="mensagem" rows="4" placeholder="Preferência de mesa, alergias, etc."></textarea>
+
+            <button type="submit">Enviar Reserva</button>
+        </form>
+        <div class="info">
+      <p><strong>Horário de funcionamento:</strong> Seg - Dom: 12h - 22h</p>
+      <p><strong>Localização:</strong> Rua Exemplo, nº 123, Cidade</p>
+      <p><strong>Contato:</strong> (244) 999-999-999</p>
+      <p><strong>Política:</strong> Cancelamentos devem ser feitos com no mínimo 2h de antecedência.</p>
+    </div>
+    </div>
+</body>
+</html>
