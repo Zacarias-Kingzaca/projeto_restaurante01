@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Sabor & Arte</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/tablete.css">
+    <link rel="stylesheet" href="estilos/tablete1.css">
      <link rel="shortcut icon" href="favicon.svg" type="image/svg">
     
     <!-- Playfair Display (para títulos elegantes) -->
@@ -18,7 +20,7 @@
 </head>
 <body>
     <header>
-        <div class="contnav">
+        <div class="contnav ">
             <h1>Sabor & Arte</h1>
             <nav>
                 <ul>
@@ -32,7 +34,7 @@
     </header>
 
     <section class="hero">
-            <div class="textop">
+            <div class="textop fade-in">
                    <h2>Bem-Vindo ao Sabor & Arte</h2>
                    <p>Pratos deliciosos com um toque de arte. Viva a melhor experiência gastronômica. 
                     <br>
@@ -41,48 +43,45 @@
                    </p>
             </div>
         </div>
-        <div class="slide">
+        <div class="slide slimg">
             <img src="img/parte principal/IMG-20250901-WA0023 (2).jpg" alt="">
         </div>
     </section>
 
     <section id="sobre-nos" class="containere">
-        <div class="sobreimg">
-            <img src="img/espaço/Compress_20250901_162223_3439.jpg" alt="Sobre espaço">
-        </div>
-        <div class="sobre-nos">
-            
+        <div class="sobre-nos fade-in">    
         <h1>Sobre Nós</h1>
-        <p>Fundado em 2015, o <strong>Restaurante Sabor & Tradição</strong> nasceu com a missão de oferecer comida caseira de qualidade, preparada com ingredientes frescos e locais.</p>
+
+        <p id="sobrep1">Fundado em 2015, o <strong>Restaurante Sabor & Tradição</strong> nasceu com a missão de oferecer comida caseira de qualidade, preparada com ingredientes frescos e locais.</p>
   
-        <p>Inspirado nas receitas das nossas avós, criamos um ambiente acolhedor onde cada cliente se sente em casa. Valorizamos o sabor, a higiene, o bom atendimento e a honestidade em cada prato servido.</p>
+        <p id="sobrep2">Inspirado nas receitas das nossas avós, criamos um ambiente acolhedor onde cada cliente se sente em casa. Valorizamos o sabor, a higiene, o bom atendimento e a honestidade em cada prato servido.</p>
   
-        <p>Nossa equipe é formada por cozinheiros experientes, apaixonados pela arte da culinária e dedicados a proporcionar experiências únicas a cada visita.</p>
+        <p id="sobrep3">Nossa equipe é formada por cozinheiros experientes, apaixonados pela arte da culinária e dedicados a proporcionar experiências únicas a cada visita.</p>
   
-        <p><em>Mais do que um restaurante, uma extensão da sua casa.</em></p>
+        <p id="sobrep4">Mais do que um restaurante, uma extensão da sua casa.</p>
         </div>
     </section>
 
-    <section class="comentarios">
+    <section class="comentarios fade-in cont ">
         <h1>O que dizem sobre nós</h2>
         
-        <div class="card">
+        <div class="card card1">
             <h3>Maria A.</h3>
 
             <p>"Uma experiência gastronômica inesquecível! Atendimento excelente e pratos que surpreendem em sabor e apresentação. Voltarei com certeza!"</p>
         </div>
 
-        <div class="card">
+        <div class="card card2">
             <h3>João Pedro</h3>
             <p>"Ambiente acolhedor, música suave e comida feita com carinho. O chef realmente sabe o que faz. Recomendo o prato da casa!"</p>
         </div>
 
-        <div class="card">
+        <div class="card card3">
             <h3>Luciana G.</h3>
             <p>"Fui com minha família e todos amaram. A sobremesa foi o ponto alto da noite! Parabéns pelo serviço impecável."</p>
         </div>
 
-        <div class="card">
+        <div class="card card4">
             <h3>Carlos M.</h3>
             <p>"O melhor restaurante da cidade. Ingredientes frescos, equipe simpática e uma carta de vinhos de nível. 5 estrelas!</p>
         </div>
@@ -94,10 +93,10 @@
             <h3>Links Rápidos</h3>
             <br>
             <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Sobre Nós</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#reserva">Reservas</a></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="contato.html">Contato</a></li>
             </ul>
         </div>
 
@@ -105,7 +104,7 @@
             <h3>Contato</h3>
             <br>
             <p>Telefone: +244 999 000 000</p>
-            <p>Email: contato@restaurante.com</p>
+            <p><a href="#">Email:contato@restaurante.com</a></p>
         </div>
 
         <div class="coluna">
@@ -124,6 +123,19 @@
             <a href="#">X</a>
         </div>
     </section>
+  <script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible'); // permite repetir
+      }
+    });
+  });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
         <footer>
             <p style="text-align: center; font-size: 1em; color: black; font-weight: 600;">
                 © 2025 Restaurante Sabor & Arte. Todos os direitos reservados.
@@ -131,3 +143,4 @@
     </footer>
 </body>
 </html>
+
