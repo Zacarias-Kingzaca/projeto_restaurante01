@@ -15,11 +15,11 @@ nav ul {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;  
 }
-.slide  {
-   padding-top: 170px;
-}
+
+
 
 .slide img {
+    padding-top: 60px;
     grid-row: 1/2;
     width: 92%;
 }
@@ -33,7 +33,7 @@ nav ul {
 }
 .textop h2 {
     padding-top: 200px;
-    font-size: 30px; 
+    font-size: 40px; 
 }
 
 .textop p {
