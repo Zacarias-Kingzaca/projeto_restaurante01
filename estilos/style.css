@@ -187,6 +187,7 @@ p, body {
 }
 
 #sobrep2 {
+    padding: 15px;
     grid-column: 3/4;
     grid-row: 2/3;
 }
