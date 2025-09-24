@@ -527,7 +527,31 @@ input,textarea,select:focus {
     padding: 90px;
     border-radius: 6px;
     }
- 
+
+ .coluna  a > i {
+    color: rgba(0, 0, 0, 0.808);
+    display: flex;
+    flex-direction: column;
+    transition: color ease-in 0.3s;
+    
+}
+
+#social a {
+    text-decoration: none;
+}
+
+i {
+    font-size: 1.8em;
+    margin: 2px;
+    opacity: 2;
+}
+
+ .coluna  a > i:hover {
+    cursor: pointer;
+    color: var(--cor-quente);
+    font-size: 2em;
+ }
+
 
 footer {
     background-color: var(--cor-quente);
