@@ -54,5 +54,10 @@
     grid-column: 1/5;
 }
 
+ #envelop #pi1 {
+    font-size: 25px;
+    padding: 20px;
+}
+
  
 }

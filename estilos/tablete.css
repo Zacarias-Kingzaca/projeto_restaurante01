@@ -103,7 +103,7 @@ nav ul {
 }
 
 .h2 {
-    padding: 120px;
+    padding: 140px;
 }
 
  #comidas,#bebidas {
@@ -126,7 +126,22 @@ nav ul {
   
 }
 
+  #envelop  {
+   display: none;
+}
+
  #h1 {
-    padding-top: 70px;
+    padding-top: 90px;
  }
+
+ #conth2 {
+     padding-top: 87px;
+ }
+
+ #contato-form {
+     width: 100%;
+     box-shadow:  12px  5px 12px -5px rgba(0, 0, 0, 0.185);
+
+ }
+
 }
