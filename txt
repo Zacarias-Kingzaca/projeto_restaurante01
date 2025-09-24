@@ -1,0 +1,20 @@
+<script>
+
+  const oserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible'); // permite repetir
+      }
+    });
+  });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+  <script>
+     function toggleMenu(){
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('Show');
+        }
+  </script>

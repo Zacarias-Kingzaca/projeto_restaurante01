@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media  (min-width:570px) and (max-width:1000px) {
+@media  (min-width:581px) and (max-width:1000px) {
     
 nav ul {
     list-style: none;
@@ -31,6 +31,7 @@ nav ul {
     padding: 14px;
     padding-left: 40px;
 }
+
 .textop h2 {
     padding-top: 200px;
     font-size: 40px; 
@@ -97,5 +98,35 @@ nav ul {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: 2fr;
 }
+#bebidas, #comidas {
+    padding-left: 20px;
+}
 
+.h2 {
+    padding: 120px;
+}
+
+ #comidas,#bebidas {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 16px;
+    margin-left: 40px;
+  }
+
+  .item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 220px;
+  }
+
+    form {
+    padding: 10px;
+  
+}
+
+ #h1 {
+    padding-top: 70px;
+ }
 }

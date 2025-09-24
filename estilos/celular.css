@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+@media (max-width:580px) {
+  
+:root {
+  --cor-fundo: #FAF9F6;       /* Fundo claro elegante */
+  --cor-primaria: #8B0000;    /* Vinho escuro */
+  --cor-secundaria: #C0A080;  /* Dourado suave */
+  --cor-texto: #1C1C1C;       /* Quase preto */
+  --cor-dourado: #C9a635;
+  --cor-dourado1: #d4af37;
+  --cor-quente: #a65f2b;
+  --cor-quent1: #8c4e24;
+}
+
+  
+
+   .navbar  {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+   }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 55px;
+        right: 0px;
+        padding: 10px;
+        padding-top: 20px;
+        height: 150vh;
+        background-color: var(--cor-quente);
+        width: 55%;
+    }   
+
+    .menu.Show {
+        display: flex;
+    }
+
+    .hamburguer {
+       display: flex;
+       font-weight: bold;
+    }
+    
+    main {
+       display: grid;
+       grid-template-columns: 10px, 1fr, 10px;
+
+    }
+
+    .hero {
+        padding-top: 120px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .slide {
+         padding-top: 0px;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .textop {
+        padding-left:0px ;
+        padding: 10px;
+    }
+
+    .textop p  {
+        padding-bottom: 10px;
+        font-size: 1.3em;
+    }
+
+     .textop h2 {
+        padding-top: 50px;
+        font-size: 2em;   
+     }
+
+    .textop button {
+        width: 160px;
+        height: 40px;
+        font-size: 0.7
+      }
+    
+    .sobre-nos  {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .sobre-nos p {
+        width: 100%;
+        margin: 10px;
+        font-size: 1em ;
+    }
+
+    .comentarios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        padding-left: 80px;
+    }
+
+    .comentarios h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .container {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+       padding-left: 20px;
+       font-size: 1em;
+    }
+
+
+  #comidas,#bebidas {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 16px;
+    margin-left: 40px;
+  }
+
+  .item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 220px;
+  }
+
+  .h2 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.37);
+    font-size: 30px;
+    text-align: center;
+    padding: 90px;
+    border-radius: 6px;
+}
+
+#h2 {
+    background-image:url('Compress_20250901_162158_8806.jpg');
+    padding: 10px;
+}
+
+ #h1 {
+        background-image:url("Compress_20250901_162148_8877.jpg") ;
+        padding: 20px;
+    }
+
+ #h1 h1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.61);
+    font-size: 25px;
+    text-align: center;
+    padding: 70px;
+    border-radius: 6px;
+    }
+
+    .reserva {
+        padding: 0px;
+    }
+
+  form {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    padding-right: 14px; 
+}
+
+    input,textarea,select {
+    padding: 10px;
+    width: 100%;
+    border:2px solid var(--cor-dourado);
+    margin: 5px;
+    border-radius: 8px;
+}
+
+    label {
+        font-weight: bold;
+        color: var(--cor-quente);
+        padding: 10px;
+    }
+
+
+    .infoo {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+}
+
+    .infop {
+        padding: 40px;
+        margin: 15px;
+        margin-bottom: 30px;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        width: 235px;
+        border-radius: 8px;
+        text-align: center;
+        
+    }
+
+    .reserva button {
+    padding: 10px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-weight:bold;
+    transition: background-color ease-in 0.3s ;
+}
+
+ #fotform {
+    display:none ;
+ }
+
+
+}

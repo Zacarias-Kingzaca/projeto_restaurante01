@@ -6,6 +6,8 @@
     <title>Restaurante Sabor & Arte Cardápio</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="estilos/celular.css">
+    <link rel="stylesheet" href="estilos/tablete.css">
     
     <!-- Playfair Display (para títulos elegantes) -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -18,27 +20,26 @@
 
 </head>
 <body>
-
-    <header>
-        <div class="contnav">
-            <h1>Sabor & Arte</h1>
-            <nav>
-                <ul>
+   <header class="navbar">
+           <div> <h1 id="sabor">Sabor & Arte</h1></div>
+            <nav id="menu" class="menu">       
                     <li><a href="index.html">Início</a></li>
                     <li><a href="cardapio.html">Cardápio</a></li>
                     <li><a href="reserva.html">Reservas</a></li>
                     <li><a href="contato.html">Contato</a></li>
-                </ul>
             </nav>
+         <div class="hamburguer" onclick="toggleMenu()">
+            &#9776
         </div>
     </header>
-   
+     <section id="h2">
+      <h2 class="h2">Comidas & Bebidas</h2>
+     </section>
 <section id="comidas">
-  <h2>Comidas</h2>
-    <div class="img">
+  <div class="item">
+  <div class="img">
         <img src="img/comida/Compress_20250901_162216_6621.jpg" alt="">
     </div>
-  <div class="item">
     <div class="info">
       <h3>Arroz com Frango</h3>
       <p>Frango marinado com ervas e grelhado lentamente.</p>
@@ -50,13 +51,70 @@
   </div>
 
   <div class="item">
-      <div class="img">
+    <div class="img">
         <img src="img/comida/Compress_20250901_162208_8887.jpg" alt="">
     </div>
     <div class="info">
       <h3>Massa Bolonhesa</h3>
       <p>Camadas de massa, carne e molho de tomate especial.</p>
     </div>
+    <div class="acoes">
+      <button>Reservar</button>
+      <span class="preco">Kz 5.000</span>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="img">
+        <img src="img/comida/1.jpg" alt="">
+    </div>
+    <div class="info">
+      <h3>Zacarias</h3>
+      <p>Camadas de peixe, carne e molho de tomate especial.</p>
+    </div>
+    <div class="acoes">
+      <button>Reservar</button>
+      <span class="preco">Kz 15.000</span>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="img">
+        <img src="img/comida/13.jpg" alt="">
+    </div>
+    <div class="info">
+      <h3>Torta de morango</h3>
+      <p>Camadas de morango, e tortas feitas com um toque especial.</p>
+    </div>
+    <div class="acoes">
+      <button>Reservar</button>
+      <span class="preco">Kz 8.000</span>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="img">
+        <img src="img/comida/3.jpg" alt="">
+    </div>
+    <div class="info">
+      <h3>Crochi</h3>
+      <p>Camadas de carne frutas e molho com toque especial especial.</p>
+    </div>
+    <div class="acoes">
+      <button>Reservar</button>
+      <span class="preco">Kz 25.000</span>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="img">
+        <img src="img/comida/5.jpg" alt="">
+    </div>
+    <div class="info">
+      <h3>Bolo especial</h3>
+      <p>Bolo feito pela melhor pastelaria de Angola.</p>
+    </div>
+    <br>
     <div class="acoes">
       <button>Reservar</button>
       <span class="preco">Kz 5.000</span>
@@ -110,7 +168,7 @@
         <img src="img/comida/Compress_20250901_162219_9685.jpg" alt="">
     </div>
     <div class="info">
-      <h3>Espaguete com Mariscos</h3>
+      <h3>Espaguete Mariscos</h3>
       <p>Espaguete ao molho de mariscos frescos com ervas.</p>
     </div>
     <div class="acoes">
@@ -121,16 +179,11 @@
 </section>
 
 
-
-
-
-
 <section id="bebidas">
-  <h2>Bebidas</h2>
+  <div class="item">
     <div class="img">
         <img src="img/bebidas/Compress_20250901_162156_6901.jpg" alt="">
     </div>
-  <div class="item">
     <div class="info">
       <h3>Sumo Natural</h3>
       <p>Laranja, manga, abacaxi ou morango 100% natural.</p>
@@ -143,6 +196,65 @@
 
   <div class="item">
     <div class="img">
+        <img src="img/bebidas/11.jpg" alt="">
+    </div>
+    <div class="info">
+      <h3>Vinho Tinto</h3>
+      <p>Feito com ouvas vermelhas, 100% natural.</p>
+    </div>
+    <div class="acoes">
+      <button>Reservar</button>
+      <span class="preco">Kz 8.000</span>
+    </div>
+  </div>
+
+   <div class="item">
+    <div class="img">
+        <img src="img/bebidas/12.jpg" alt="">
+    </div>
+    <div class="info">
+      <h3>Vinho Branco</h3>
+      <p>Feito com ouvas brancas,   100% natural.</p>
+    </div>
+    <br>
+    <div class="acoes">
+      <button>Reservar</button>
+      <span class="preco">Kz 10.000</span>
+    </div>
+  </div>
+
+   <div class="item">
+    <div class="img">
+        <img src="img/bebidas/16.jpg" alt="">
+    </div>
+    <div class="info">
+      <h3>Gim</h3>
+      <p>Proveniente de Dubai, feito com toque especial.</p>
+    </div>
+    <div class="acoes">
+      <button>Reservar</button>
+      <span class="preco">Kz 118.000</span>
+    </div>
+  </div>
+
+ <div class="item">
+    <div class="img">
+        <img src="img/bebidas/6.jpg" alt="">
+    </div>
+    <div class="info">
+      <h3>Batido de manga</h3>
+      <p>Feito com mangas, 100% natural.</p>
+    </div>
+    <br>
+    <div class="acoes">
+      <button>Reservar</button>
+      <span class="preco">Kz 8.000</span>
+    </div>
+  </div>
+
+
+  <div class="item">
+    <div class="img">
         <img src="img/bebidas/Compress_20250901_162158_8335.jpg" alt="">
     </div>
     <div class="info">
@@ -150,6 +262,7 @@
       <p>Água natural ou com gás. Sumo 100% natural.</p>
     </div>
     <div class="acoes">
+      
       <button>Reservar</button>
       <span class="preco">Kz 500</span>
     </div>
@@ -169,6 +282,7 @@
     </div>
   </div>
 
+
   <div class="item">
     <div class="img">
         <img src="img/bebidas/Compress_20250901_162201_1804.jpg" alt="">
@@ -177,6 +291,7 @@
       <h3>Cocktail Tropical</h3>
       <p>Bebida mista com frutas tropicais e toque cítrico.</p>
     </div>
+    <br>
     <div class="acoes">
       <button>Reservar</button>
       <span class="preco">Kz 1.200</span>
@@ -191,6 +306,7 @@
       <h3>Vinho Blanc</h3>
       <p>Café intenso com aroma forte, servido quente.</p>
     </div>
+    <br>
     <div class="acoes">
       <button>Reservar</button>
       <span class="preco">Kz 16.600</span>
@@ -210,6 +326,56 @@
       <span class="preco">Kz 500</span>
     </div>
   </div>
+</section>
+  
+    <section class="rodape-links">
+        <div class="container">
+        <div class="coluna">
+            <h3>Links Rápidos</h3>
+            <br>
+            <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="coluna">
+            <h3>Contato</h3>
+            <br>
+            <p>Telefone: +244 999 000 000</p>
+            <p><a href="#">Email:contato@restaurante.com</a></p>
+        </div>
+
+        <div class="coluna">
+            <h3>Localização</h3>
+            <br>
+            <p>Rua dos Sabores, nº 25</p>
+            <p>Luanda, Angola</p>
+        </div>
+
+        <div class="coluna">
+            <h3>Redes Sociais</h3>
+             <br>
+            <a href="#">Facebook</a><br>
+            <a href="#">Instagram</a><br>
+            <a href="#">TikTok</a><br>
+            <a href="#">X</a>
+        </div>
+    </section>
+    <script>
+        function toggleMenu(){
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('Show');
+        }
+    </script>
+        <footer>
+            <p style="text-align: center; font-size: 1em; color: black; font-weight: 600;">
+                © 2025 Restaurante Sabor & Arte. Todos os direitos reservados.
+            </p>
+        </footer>
+
 </section>
 </body>
 </html>

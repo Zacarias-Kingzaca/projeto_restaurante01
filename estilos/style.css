@@ -38,44 +38,54 @@ body {
     color: #1C1C1C;
 }
 
-header {
+.navbar {
     background-color: var(--cor-quente);
     padding: 20px;
     position: fixed;
     width: 100%;
     box-shadow:  0px  10px 30px 2px rgba(0, 0, 0, 0.219);
+    display: flex;
+    justify-content: space-between;
 }
 
-.contnav {
-    display: flex;
-    color: var(--cor-texto);
-    justify-content: center;
-}
-.contnav  {
+.navbar h1 {
     color: white;
 }
 
-nav ul {
-    list-style: none;
+
+nav {
     display: flex;
-    padding: 10px 15px;
-    margin-left: 438px;
+    list-style: none;
 }
 
-nav ul a {
+.navbar nav a { 
+    display: flex;
     color: white;
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
-    margin: 20px;
+    margin: 10px;
     transition:  color all 11s;
     transition: color 0.3s;
     font-family: Playfair Display;
 }
 
-nav ul a:hover {
+.navbar nav a:hover {
     color: black;
     text-decoration: underline;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    padding-right: 160px;
+}
+
+.hamburguer {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
 }
 
 .hero {  
@@ -94,15 +104,14 @@ nav ul a:hover {
 }
 
 .slide img {
-    width: 92%;
-   
+    width: 92%;  
 }
 
 .textop {
     grid-column: 2/3;
     grid-row: 1/2;
     padding: 30px;
-    padding-left:108px ;
+    padding-left:108px;
 }
 
 .textop button {
@@ -137,6 +146,7 @@ nav ul a:hover {
 
 h1, h2 {
     font-family: 'Playfair Display',serif;
+    
 }
 
 button {
@@ -255,7 +265,7 @@ p, body {
 .container {
     padding-top: 40px;
     padding: 50px;
-    padding-left: 120px;
+    padding-left: 100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 2fr;
@@ -294,16 +304,230 @@ p, body {
     font-weight: bold;
 }
 
-.fade-in {
+#fade-in {
   opacity: 0;
   transform: translateY(50px) scale(0.98);
   transition: all 3s ease;
 }
 
-.fade-in.visible {
+#fade-in.visible {
   opacity: 1;
   transform: translateY(0) scale(1);
 }
+
+#comidas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding-top: 10px;
+    gap: 10px;
+}
+
+#bebidas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding-bottom: 50px;
+}
+
+
+#comidas img, #bebidas img {
+    width: 100%;
+    height: 160px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+#comidas img:hover {
+    scale: 0.9;    
+}
+
+#bebidas img:hover {
+    scale: 0.9;    
+}
+
+.item {
+    background-color:  #cf8f5028;
+    width: 220px;
+    height: 380px;
+    margin: 20px;
+    border-radius: 6px;
+    box-shadow:  3px  5px 12px 5px rgba(0, 0, 0, 0.274);
+    padding: 1px;
+    cursor: pointer;
+    transition: background-color ease-in-out 0.3s;
+}
+
+.item:hover {
+    background-color: #cf8f503f;
+    scale: 0.9;
+}
+
+.h2 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.616);
+    font-size: 50px;
+    text-align: center;
+    padding: 90px;
+    border-radius: 6px;
+}
+
+#h22 {
+    color: var(--cor-quente);
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+#h2 {
+    background-image:url('Compress_20250901_162158_8806.jpg');
+    padding: 50px;
+}
+
+.item h3 {
+    color: var(--cor-quente);
+    padding: 15px;
+}
+
+.item span {
+    font-weight: bold;
+    color: var(--cor-quente);
+}
+
+.item p {
+    font-weight: bold;
+    padding: 15px;
+}
+
+.item button {
+    padding: 10px 20px;
+    background-color: var(--cor-dourado);
+    border: none;
+    border-radius: 6px;
+    margin: 15px;
+    font-weight: bold;
+    border: 1px solid black;
+    transition: background-color ease-in 0.3s;
+}
+
+.item button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: var(--cor-dourado);
+    border: 1px solid var(--cor-dourado);
+}
+
+.reserva {
+    padding-top: 40px;
+    background-color: #FAF9F6;
+    display: flex;
+    padding: 50px;
+}
+
+.reserva div {
+    width: 50%;
+    box-shadow:  -5px  5px 12px 5px rgba(0, 0, 0, 0.185);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 50%;
+    box-shadow:  3px  5px 12px 5px rgba(0, 0, 0, 0.185);
+}
+
+
+    .infoo {
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+.infop {
+        padding: 50px;
+        margin: 15px;
+        padding-left: 20px;
+        background-color: rgba(255, 255, 255, 0.445);
+        margin-bottom: 50px;
+        box-shadow:  3px  5px 12px 5px rgba(0, 0, 0, 0.308);
+        border: 1px solid rgba(0, 0, 0, 0.425);
+        border-radius: 8px;
+        text-align: center; 
+        font-weight: bold;
+        color: var(--cor-quente);
+        transition: background-color ease-in-out 0.3s;   
+    }
+
+    .infop:hover {
+        cursor: pointer;
+        color: white;
+        background-color: var(--cor-quente);
+    }
+
+ #fotform  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+   input,textarea,select {
+    padding: 10px;
+    border:2px solid var(--cor-dourado);
+    margin: 5px;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: bold;
+}
+
+input,textarea,select:focus {
+    background-color: white;
+}
+
+    label {
+        font-weight: bold;
+        color: var(--cor-quente);
+        padding: 10px;
+    }
+
+  .reserva button {
+    padding: 10px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: var(--cor-quente);
+    border: 1px solid black;
+    font-weight:bold;
+    color: white;
+    transition: background-color ease-in 0.3s ;
+}
+
+.reserva button:hover {
+    cursor: pointer;
+    background-color: var(--cor-quent1);
+    border: 2px solid black;
+}
+
+.infoo {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+    #h1 {
+        background-image:url("Compress_20250901_162148_8877.jpg") ;
+        padding: 40px;
+    }
+
+    #h1 h1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.61);
+    font-size: 50px;
+    text-align: center;
+    padding: 90px;
+    border-radius: 6px;
+    }
+ 
 
 footer {
     background-color: var(--cor-quente);
